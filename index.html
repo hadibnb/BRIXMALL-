@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BrixMall — پرداخت با BRICS</title>
+    <!-- Tailwind Play CDN for quick preview -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Small overrides for demo */
+      .card { border-radius: 14px; }
+      .glass { background: rgba(255,255,255,0.8); backdrop-filter: blur(6px); }
+      body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue'; }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-sky-50 to-white text-gray-800">
+    <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-2xl bg-indigo-600 flex items-center justify-center text-white font-extrabold shadow-xl">BR</div>
+        <div>
+          <h1 class="text-2xl font-bold">BrixMall</h1>
+          <p class="text-sm text-gray-500">بازار بین‌المللی — پرداخت با توکن BRICS</p>
+        </div>
+      </div>
+
+      <nav class="flex items-center gap-4">
+        <select aria-label="language" class="border rounded px-3 py-2 text-sm">
+          <option>فارسی</option>
+          <option>العربية</option>
+          <option>English</option>
+          <option>Türkçe</option>
+          <option>Русский</option>
+        </select>
+        <a class="px-4 py-2 rounded hover:bg-slate-100">فروشندگان</a>
+        <a class="px-4 py-2 rounded bg-indigo-600 text-white">دریافت Brix Card</a>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+      <!-- Hero -->
+      <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">بازار بین‌المللی — پرداخت با توکن BRICS</h2>
+          <p class="text-lg text-gray-600 mb-6">محصولات از ایران، ترکیه، امارات، قطر و عمان. خرید با توکن BRICS و کارت Brix — ثبت، شارژ و پیگیری سفارش در یک پلتفرم امن.</p>
+
+          <div class="flex gap-3">
+            <a class="px-5 py-3 rounded shadow-md bg-indigo-600 text-white">ثبت‌نام فروشنده</a>
+            <a class="px-5 py-3 rounded border">آشنایی با BRICS</a>
+          </div>
+
+          <ul class="mt-8 grid grid-cols-2 gap-3 text-sm text-gray-700">
+            <li class="flex gap-3 items-start"><div class="w-10 h-10 rounded p-2 bg-slate-50 flex items-center justify-center">💳</div><div><div class="font-semibold">Brix Card</div><div class="text-xs">مجازی اکنون — فیزیکی بعداً</div></div></li>
+            <li class="flex gap-3 items-start"><div class="w-10 h-10 rounded p-2 bg-slate-50 flex items-center justify-center">🚚</div><div><div class="font-semibold">پیگیری زنده</div><div class="text-xs">وضعیت سفارش تا لحظه تحویل</div></div></li>
+            <li class="flex gap-3 items-start"><div class="w-10 h-10 rounded p-2 bg-slate-50 flex items-center justify-center">🔐</div><div><div class="font-semibold">حفاظت پرداخت</div><div class="text-xs">نگهداری مبلغ ۲۴ ساعت تا تأیید خریدار</div></div></li>
+            <li class="flex gap-3 items-start"><div class="w-10 h-10 rounded p-2 bg-slate-50 flex items-center justify-center">🌐</div><div><div class="font-semibold">چندزبانه</div><div class="text-xs">فارسی، عربی، انگلیسی، ترکی و روسی</div></div></li>
+          </ul>
+        </div>
+
+        <div class="bg-white card rounded-2xl p-6 shadow-lg">
+          <div class="flex items-center gap-4">
+            <div class="w-32 h-24 bg-slate-100 rounded flex items-center justify-center"><img src="assets/product1.png" alt="product" style="max-width:100%; height:auto; border-radius:8px;" /></div>
+            <div class="flex-1">
+              <div class="text-xs text-gray-400">تولیدکننده: Atelier — Turkey</div>
+              <div class="font-semibold">کیف چرمی دست‌دوز</div>
+              <div class="text-sm text-gray-500">قیمت پایه: $120</div>
+            </div>
+          </div>
+
+          <div class="mt-4 grid grid-cols-2 gap-3">
+            <div class="p-3 bg-slate-50 rounded">حمل و نقل: محاسبه‌شده</div>
+            <div class="p-3 bg-slate-50 rounded">موجودی: 12</div>
+            <div class="col-span-2 flex gap-2 mt-2">
+              <button class="flex-1 py-2 rounded bg-green-600 text-white">خرید با Brix Card</button>
+              <button class="flex-1 py-2 rounded border">اضافه به سبد</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vendor panel preview -->
+      <section class="mt-12">
+        <h3 class="text-xl font-semibold mb-4">پنل فروشنده — نمای کلی</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="p-4 bg-white card shadow">
+            <div class="text-sm text-gray-400">فروشنده</div>
+            <div class="font-semibold">نام فروشگاه</div>
+            <div class="mt-3 text-sm text-gray-600">آپلود محصول، قیمت دلاری، تعیین وزن و کشور مبدا. مشاهده سفارش‌ها و وضعیت پرداخت (کد رهگیری).</div>
+          </div>
+
+          <div class="p-4 bg-white card shadow">
+            <div class="text-sm text-gray-400">سفارش‌ها</div>
+            <div class="font-semibold">وضعیت زنده</div>
+            <ol class="text-sm mt-2 space-y-2">
+              <li>۱. سفارش ثبت شد</li>
+              <li>۲. از تولیدکننده خارج شد</li>
+              <li>۳. در مسیر</li>
+              <li>۴. تحویل شده — خریدار کد را ثبت کرد</li>
+            </ol>
+          </div>
+
+          <div class="p-4 bg-white card shadow">
+            <div class="text-sm text-gray-400">پرداخت‌ها</div>
+            <div class="font-semibold">نگهداری موقت مبلغ</div>
+            <p class="text-sm mt-2 text-gray-600">مبلغ ۲۴ ساعت در سیستم نگه داشته می‌شود تا خریدار محصول را تایید کند؛ سپس به حساب فروشنده واریز می‌شود (توکن BRICS یا ارز محلی).</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vendor Upload -->
+      <section class="mt-12 bg-gradient-to-r from-white to-slate-50 rounded-2xl p-6 shadow">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div class="w-full lg:w-1/3">
+            <h3 class="text-xl font-semibold mb-2">آپلود محصول</h3>
+            <p class="text-sm text-gray-600 mb-4">فروشندگان اطلاعات پایه، قیمت دلاری و وزن را وارد می‌کنند؛ سیستم هزینه حمل را به صورت خودکار محاسبه می‌کند.</p>
+            <a class="px-4 py-2 rounded bg-indigo-600 text-white">آپلود محصول</a>
+          </div>
+
+          <div class="flex-1 bg-white card p-4">
+            <form class="grid gap-3">
+              <input class="border rounded px-3 py-2" placeholder="عنوان محصول (قیمت USD نشان داده می‌شود)" />
+              <textarea class="border rounded px-3 py-2" placeholder="توضیح کوتاه"></textarea>
+              <div class="flex gap-2">
+                <input class="border rounded px-3 py-2" placeholder="وزن (kg)" />
+                <input class="border rounded px-3 py-2" placeholder="موجودی" />
+              </div>
+              <div class="flex items-center gap-3">
+                <label class="text-sm">کشور مبدا</label>
+                <select class="border rounded px-3 py-2 text-sm">
+                  <option>Turkey</option>
+                  <option>UAE</option>
+                  <option>Qatar</option>
+                  <option>Oman</option>
+                  <option>Iran</option>
+                </select>
+              </div>
+              <div class="flex justify-end">
+                <button class="px-4 py-2 rounded bg-indigo-600 text-white">Upload product</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card registration mockup -->
+      <section class="mt-12 grid md:grid-cols-2 gap-6">
+        <div class="bg-white card rounded-2xl p-6 shadow">
+          <h4 class="font-semibold mb-3">Brix Card — ثبت نام و شارژ</h4>
+          <div class="grid gap-3">
+            <div class="text-sm text-gray-500">مرحله ۱ — KYC سریع</div>
+            <input class="border rounded px-3 py-2" placeholder="نام کامل" />
+            <input class="border rounded px-3 py-2" placeholder="کد ملی / پاسپورت" />
+            <input class="border rounded px-3 py-2" placeholder="شماره تلفن (برای OTP)" />
+
+            <div class="text-sm text-gray-500 mt-2">مرحله ۲ — انتخاب کارت</div>
+            <div class="flex gap-2">
+              <button class="flex-1 py-2 rounded border">مجازی — آنی</button>
+              <button class="flex-1 py-2 rounded">فیزیکی — ارسال</button>
+            </div>
+
+            <div class="mt-3 text-sm text-gray-600">روش شارژ: توکن BRICS (کیف پول داخلی) یا درگاه‌های فیات پارتنر.</div>
+            <div class="flex justify-end mt-3"><button class="px-4 py-2 bg-indigo-600 text-white rounded">ایجاد حساب</button></div>
+          </div>
+        </div>
+
+        <div class="bg-white card rounded-2xl p-6 shadow">
+          <h4 class="font-semibold mb-3">پیگیری سفارش — زنده</h4>
+          <div class="w-full border rounded p-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-sm text-gray-500">کد سفارش</div>
+                <div class="font-bold">BRX-2025-000125</div>
+              </div>
+              <div class="text-sm text-gray-500">وضعیت: در مسیر</div>
+            </div>
+
+            <ol class="mt-4 space-y-3">
+              <li class="flex items-start gap-3">
+                <div class="w-3 h-3 rounded-full bg-green-600 mt-1"></div>
+                <div>
+                  <div class="font-semibold">سفارش ثبت شد</div>
+                  <div class="text-xs text-gray-400">2025-12-01 10:12 GMT+3</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3 opacity-90">
+                <div class="w-3 h-3 rounded-full bg-yellow-400 mt-1"></div>
+                <div>
+                  <div class="font-semibold">از تولیدکننده خارج شد</div>
+                  <div class="text-xs text-gray-400">2025-12-03 08:20 GMT+3</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-3 opacity-70">
+                <div class="w-3 h-3 rounded-full bg-gray-300 mt-1"></div>
+                <div>
+                  <div class="font-semibold">در مسیر</div>
+                  <div class="text-xs text-gray-400">به‌زودی به‌روزرسانی می‌شود</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-12 text-center text-sm text-gray-500">© BrixMall — نمونه طراحی اولیه</footer>
+    </main>
+
+    <script>
+      // Simple client-side behavior for demo (no backend)
+      document.addEventListener('click', function(e){
+        if(e.target.matches('[data-download]')){
+          alert('Download action — in real project replace with proper export.');
+        }
+      });
+    </script>
+  </body>
+</html>
